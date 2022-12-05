@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Routes,Route, BrowserRouter as Router} from 'react-router-dom';
 import RootRouter  from './router/RootRouter';
@@ -6,20 +5,20 @@ function App() {
   return(
     <Router>
       <div>
-          <div>
+        <div>
           {/* <MenuBar/> */}
-          <Routes>
-    {showMenuContents(RootRouter,locationContext)}
-    </Routes>
+            <Routes>
+              {showMenuContents(RootRouter)}
+            </Routes>
               
-          </div>
+        </div>
       </div>
         {/* <MyFooter/> */}
     </Router>
     )
 }
 
-const showMenuContents=(routers,locationContext)=>{
+const showMenuContents=(routers)=>{
   var index=0;
   var routerList=[]
   routers.forEach(element => {
