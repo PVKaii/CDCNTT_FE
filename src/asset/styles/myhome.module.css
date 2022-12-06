@@ -1,36 +1,5 @@
 
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    font-size: 100%;
-    vertical-align: baseline;
-}
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-li{
-    list-style-type: none;
-}
-
-html {
-    font-size: 16px;
-}
-body {
-    min-width: 1836px;
-    color: #4a4d4f;
-    font-family: Muli, sans-serif;
-    font-size: 0.875rem; 
-    font-style: normal;
-    font-weight: normal;
-    letter-spacing: 0;
-    text-decoration: none;
-    background-color: #F7F7F7;
-}
 .content {
     display: flex;
     flex-direction: column;
@@ -326,6 +295,7 @@ body {
 .post{
     background-color: white;
     border-radius: 15px;
+    padding-bottom: 10px;
 }
 
 .header-post {
@@ -452,29 +422,6 @@ body {
 
 }
 
-.list-cmt .activity-cmt{
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 15px;
-}
-
-.list-cmt .activity-cmt .content-cmt{
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    padding-left: 10px;
-
-
-}
-.list-cmt .activity-cmt .content-cmt input{
-    border: #bfc1c3 1px solid;
-    width: 100%;
-    border-radius: 20px;
-    background-color:#F7F7F7 ;
-    line-height: 25px;
-}
 
 .list-cmt .cmt {
     display: flex;
@@ -483,15 +430,18 @@ body {
     margin-left: 10px;
 }
 
+
 .list-cmt .cmt .content-cmt{
     display: flex;
     flex-direction: row;
 }
 
+
 .cmt .content-cmt .center-cmt{
     margin-left: 10px;
     margin-right: 10px;
 }
+
 
 .content-cmt .center-cmt .content-center{
     padding: 8px;
@@ -506,9 +456,44 @@ body {
     padding-left: 8px;
 }
 
+.cmt .content-cmt .setting-cmt{
+    height: 65%;
+    display: flex;
+    justify-content: center;
+}
+
 .cmt .content-cmt .setting-cmt button{
+    background-color: white;
     margin: auto;
 }
+
+
+.activity-cmt{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+.activity-cmt .content-cmt{
+    width: 88%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto 0 10px;
+
+
+}
+.activity-cmt .content-cmt input{
+    height: 35px;
+    border: #bfc1c3 1px solid;
+    width: 100%;
+    border-radius: 18px;
+    background-color:#F7F7F7 ;
+    line-height: 15px;
+}
+
+
+
 
 
 /*------------more---------------- */

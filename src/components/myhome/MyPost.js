@@ -1,4 +1,7 @@
 import { Component } from "react";
+import { FaEllipsisH } from 'react-icons/fa'
+
+
 import styles from '../../asset/styles/myhome.module.css'
 
 class MyPost extends Component{
@@ -10,7 +13,7 @@ class MyPost extends Component{
                     <h1> Giới Thiệu</h1>
                 </div>
                 <div className={styles["my-friends"]}>
-                    <p className={styles["title friends"]}>My Friends</p>
+                    <p className={styles["title"] + ' '+ styles["friends"]}>My Friends</p>
                     <div className={styles["separator"]}></div>
                     <div className={styles["list-friends"]}>
                         <ul className={styles["list"]}>
@@ -65,7 +68,7 @@ class MyPost extends Component{
                     <p >View All (45)</p>
                 </div>
                 <div className={styles["my-photos"]}>
-                    <p className={styles["title photos"]}>My Photos</p>
+                    <p className={styles["title"] + ' ' + styles["photos"]}>My Photos</p>
                     <div className={styles["separator"]}></div>
                     <div className={styles["list-photos"]}>
                         <ul className={styles["list"]}>
@@ -129,8 +132,8 @@ class MyPost extends Component{
                         <div className={styles["postBottom"]}>
                             <div className={styles["show-interact"]}>
                                 <div className={styles["show-icon"]}>
-                                    <img className={styles["likeIcon"]} src="image/like.png"  alt="" />
-                                    <img className={styles["likeIcon"]} src="image/heart.png"  alt="" />
+                                    <img className={styles["likeIcon"]} src="/image/like.png"  alt="" />
+                                    <img className={styles["likeIcon"]} src="/image/heart.png"  alt="" />
                                     <span className={styles["postLikeCounter"]}>18 people like it</span>
                                 </div>
                                 <div className={styles["show-cmt"]}>
@@ -159,95 +162,96 @@ class MyPost extends Component{
                             </div>
                             <div className={styles["list-cmt"]}>
                                 <ul>
-                                    <li className={["cmt"]}>
-                                        <div className={["img-profile"]}>
+                                    <li className={styles["cmt"]}>
+                                        <div className={styles["img-profile"]}>
                                             <img src="" alt=""/>
-                                            <div className={["online"]}>
-                                                <div className={["ellipse"]}></div>
+                                            <div className={styles["online"]}>
+                                                <div className={styles["ellipse"]}></div>
                                             </div>
                                         </div>
-                                        <div className={["content-cmt"]}>
-                                        <div className={["center-cmt"]}>
-                                            <div className={["content-center"]}>
-                                                <p>Long</p>
-                                                <p>This is the first paragraph of text. This is the first paragraph of text.</p>
-                                            </div>
-                                            <div className={["feed-back"]}>
-                                                <span>Thích</span>
-                                                <span>Phản hồi</span>
-                                                <span>28 phút</span>
-                                            </div>
-                                        </div>
-                                        <div className={["setting-cmt"]}>
-                                            <button>
-                                                <i className={["fa-solid fa-ellipsis"]}></i>
-                                            </button>
-                                        </div>
-                                        </div>
-                                    </li>
-                                    <li className={["cmt"]}>
-                                        <div className={["img-profile"]}>
-                                            <img src="" alt=""/>
-                                            <div className={["online"]}>
-                                                <div className={["ellipse"]}></div>
-                                            </div>
-                                        </div>
-                                        <div className={["content-cmt"]}>
-                                            <div className={["center-cmt"]}>
-                                                <div className={["content-center"]}>
+                                        <div className={styles["content-cmt"]}>
+                                            <div className={styles["center-cmt"]}>
+                                                <div className={styles["content-center"]}>
                                                     <p>Long</p>
                                                     <p>This is the first paragraph of text. This is the first paragraph of text.</p>
                                                 </div>
-                                                <div className={["feed-back"]}>
+                                                <div className={styles["feed-back"]}>
                                                     <span>Thích</span>
                                                     <span>Phản hồi</span>
                                                     <span>28 phút</span>
                                                 </div>
                                             </div>
-                                            <div className={["setting-cmt"]}>
+                                            <div className={styles["setting-cmt"]}>
                                                 <button>
-                                                    <i className={["fa-solid fa-ellipsis"]}></i>
+                                                    <FaEllipsisH />
                                                 </button>
                                             </div>
                                         </div>
                                     </li>
-                                    <li className={["cmt"]}>
-                                        <div className={["img-profile"]}>
+                                    <li className={styles["cmt"]}>
+                                        <div className={styles["img-profile"]}>
                                             <img src="" alt=""/>
-                                            <div className={["online"]}>
-                                                <div className={["ellipse"]}></div>
+                                            <div className={styles["online"]}>
+                                                <div className={styles["ellipse"]}></div>
                                             </div>
                                         </div>
-                                        <div className={["content-cmt"]}>
-                                            <div className={["center-cmt"]}>
-                                                <div className={["content-center"]}>
+                                        <div className={styles["content-cmt"]}>
+                                            <div className={styles["center-cmt"]}>
+                                                <div className={styles["content-center"]}>
                                                     <p>Long</p>
                                                     <p>This is the first paragraph of text. This is the first paragraph of text.</p>
                                                 </div>
-                                                <div className={["feed-back"]}>
+                                                <div className={styles["feed-back"]}>
                                                     <span>Thích</span>
                                                     <span>Phản hồi</span>
                                                     <span>28 phút</span>
                                                 </div>
                                             </div>
-                                            <div className={["setting-cmt"]}>
+                                            <div className={styles["setting-cmt"]}>
                                                 <button>
-                                                    <i className={["fa-solid fa-ellipsis"]}></i>
+                                                    <FaEllipsisH />
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li className={styles["cmt"]}>
+                                        <div className={styles["img-profile"]}>
+                                            <img src="" alt=""/>
+                                            <div className={styles["online"]}>
+                                                <div className={styles["ellipse"]}></div>
+                                            </div>
+                                        </div>
+                                        <div className={styles["content-cmt"]}>
+                                            <div className={styles["center-cmt"]}>
+                                                <div className={styles["content-center"]}>
+                                                    <p>Long</p>
+                                                    <p>This is the first paragraph of text. This is the first paragraph of text.</p>
+                                                </div>
+                                                <div className={styles["feed-back"]}>
+                                                    <span>Thích</span>
+                                                    <span>Phản hồi</span>
+                                                    <span>28 phút</span>
+                                                </div>
+                                            </div>
+                                            <div className={styles["setting-cmt"]}>
+                                                <button>
+                                                    <FaEllipsisH />
                                                 </button>
                                             </div>
                                         </div>
                                     </li>
                                 </ul>
-                                <div className={["activity-cmt"]}>
-                                    <div className={["img-profile"]}>
-                                        <img src="" alt=""/>
-                                        <div className={["online"]}>
-                                            <div className={["ellipse"]}></div>
-                                        </div>
+
+                            </div>
+                            <div className={styles["activity-cmt"]}>
+                                <div className={styles["img-profile"]}>
+                                    <img src="" alt=""/>
+                                    <div className={styles["online"]}>
+                                        <div className={styles["ellipse"]}></div>
                                     </div>
-                                    <div className={["content-cmt"]}>
-                                        <input type="text" placeholder="Viết bình luận ..."/>
-                                    </div>
+                                </div>
+                                <div className={styles["content-cmt"]}>
+                                    <input type="text" placeholder="Viết bình luận ..."/>
                                 </div>
                             </div>
                         </div>

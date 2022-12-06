@@ -1,18 +1,16 @@
 import './App.css';
 import { Routes,Route, BrowserRouter as Router} from 'react-router-dom';
 import RootRouter  from './router/RootRouter';
+
+import MenuBar from './menu/menu';
+
 function App() {
   return(
     <Router>
-      <div>
-        <div>
-          {/* <MenuBar/> */}
-            <Routes>
-              {showMenuContents(RootRouter)}
-            </Routes>
-              
-        </div>
-      </div>
+        <MenuBar/>
+        <Routes>
+          {showMenuContents(RootRouter)}
+        </Routes>      
         {/* <MyFooter/> */}
     </Router>
     )

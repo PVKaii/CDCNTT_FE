@@ -36,11 +36,6 @@ const homeMenu = [
 ]
 
 
-
-
-
-
-
 const MyHome = ()=>{
     const [menuHome,setMenuHome] = useState("")
     
@@ -62,7 +57,6 @@ const MyHome = ()=>{
             return <Videos/>
         }
     }   
-    
 
     const loadHomeMenu = ()=>{
         const handleClickMenu = (value) =>{
@@ -87,7 +81,7 @@ const MyHome = ()=>{
     }
 
     return(
-        <div className={styles["main"]}>
+        <div className={styles["content"]}>
             <MyWrapper/>
             <MyHomeContainer 
                 loadHomeMenu={loadHomeMenu}
