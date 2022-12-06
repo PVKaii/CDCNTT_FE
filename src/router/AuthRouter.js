@@ -11,7 +11,7 @@ const authRoutes=[
         role:[],
     },
     {
-        path: "/home",
+        path: "/page",
         exact: true,
         page: HomePage,
         role:[],

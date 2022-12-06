@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { FaCamera } from "react-icons/fa"
 import styles from '../../asset/styles/myhome.module.css'
 class MyWrapper extends Component{
     render(){
@@ -10,8 +11,8 @@ class MyWrapper extends Component{
                     </div>
                     <div className={styles["edit-imge"]}>
                         <button>
-                            <i className={styles["fa-solid fa-camera"]}></i>
-                            <span>Chỉnh sửa ảnh bìa</span>
+                            <FaCamera/>
+                            <span style={{marginLeft:"5px"}}>Chỉnh sửa ảnh bìa</span>
                         </button>
                     </div>
                 </div>

@@ -6,6 +6,7 @@
     flex-direction: row;
     background: white;
     z-index: 1;
+    border-bottom: #5c5e5f 1px solid;
 
 }
   
@@ -87,7 +88,6 @@
     font-weight: 700;
 }
   
-
   
 .group-notification{
     display: flex;
@@ -101,6 +101,7 @@
     flex-direction: column;
     position: relative;
 }
+
 .contact .count-nof{
     width: 17px;
     height: 17px;
@@ -111,12 +112,12 @@
     border-radius: 50%;
     display: flex;
 }
+
 .contact .count-nof > span{
     color: white;
     margin: auto;
 
 }
-
 
 .contact .icon{
     display: flex;

@@ -1,0 +1,357 @@
+.container{
+    width: 100%;
+    height: 2000px;
+    display: flex;
+    flex-direction: row;
+}
+  
+  /*-----nav--------*/
+.container .navigation{
+    width: 30%;
+}
+  
+.my-profile-menu {
+    padding-top: 60px;
+    padding-left: 15px;
+}
+  
+.my-profile-menu .a-profile{
+    display: flex;
+    flex-direction: row;
+}
+
+.my-profile-menu .a-profile .img-profile img{
+    width: 48px;
+    height: 48px;
+    padding-left: 5px;
+}
+
+.my-profile-menu .a-profile .name-profile p{
+    margin-left: 5px;
+}
+  
+.my-profile-menu .list-detail{
+    margin-top: 10px;
+}
+
+.my-profile-menu .list-detail > li{
+    margin-bottom: 20px;
+    width: 60%;
+    cursor: pointer;
+    border-radius: 5px;
+    line-height: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+.my-profile-menu .list-detail li > a{
+    display: flex;
+    flex-direction: row;
+}
+.list-detail .icon{
+    height: 48px;
+}
+  
+.list-detail .title{
+    margin-left: 15px;
+}
+  
+  
+.my-profile-menu li:hover{
+    background-color: rgba(0, 0, 0, 0.15);
+}
+  /*--------main------------*/
+.container .main{  
+    width: 40%;
+  
+}
+  
+.create-post {
+    margin-top: 80px;
+    min-height: 120px;
+    border: 1px solid #e7e8e9; 
+    border-radius: 7px;
+    background: #ffffff;
+  
+}
+  
+.list-post{
+    margin-top: 20px;
+    background: #ffffff;
+    border: 1px solid #e7e8e9; 
+    min-height: 120px;
+}
+  
+.header-post {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+.header-post .avatar-post {
+    height: 60px;
+    position: relative;
+    width: 60px;
+    border-radius: 50%;
+    background: #bfc1c3;
+}
+
+.header-post > .avatar-post > .status {
+    position: absolute;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background: #4fe63f;
+    left: 47px;
+    bottom: 7px;
+}
+  
+.detail-post {
+    margin: 13px 0 0 15px;
+    position: relative;
+    width: 138px;
+}
+.detail-post .name-post {
+    margin: 0 0 0 1px;
+    position: relative;
+}
+.name-post > * {
+    float: left;
+    margin: 0 4px 0 0;
+}
+  
+.name-post .name {
+    color: #2186c4;
+    font-weight: bold;
+    margin-top: 1px !important;
+}
+.posted {
+    color: #686d71;
+    margin-top: 1px !important;
+}
+.time-post {
+    margin: 14px 0 0;
+    position: relative;
+    width: 98px;
+}
+  
+.time-post > p {
+    color: #8e9194;
+    font-size: 0.6875rem;
+    letter-spacing: 0.025em;
+}
+  
+.content-post .title-post{
+    padding-left: 10px;
+    margin-bottom: 10px ;
+}
+  
+.content-post .content{
+    width: 100%;
+    height: 500px;
+    background-color: #363c42;
+}
+  
+.postBottom .show-interact{
+    display: flex;
+    align-items: center;   
+    height: 40px;
+    justify-content: space-between;
+}
+  
+.postBottom .show-interact .show-icon{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.postBottom .show-interact .likeIcon{
+    max-width: 20px;
+    max-height: 20px;
+    
+}
+  
+.show-interact .postLikeCounter{
+    margin-left: 10px; 
+    font-size: 15px; 
+}
+.show-interact .show-cmt{
+    padding-right: 10px;
+}
+  
+.post .postBottom .interact{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-bottom: #bfc1c3 1px solid;
+    border-top:  #bfc1c3 1px solid;
+}
+  
+.postBottom .interact .activity {
+    margin: auto;
+}
+  
+.interact .activity button {
+    background-color: white;
+}
+.interact .activity i{
+    width: 22px;
+    height: 22px;
+}
+  
+.interact .activity span {
+    font-size: 18px;
+    margin-right: 10px;
+  
+}
+  
+.list-cmt .activity-cmt{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+  
+.list-cmt .activity-cmt .content-cmt{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+  
+  
+}
+.list-cmt .activity-cmt .content-cmt input{
+    border: #bfc1c3 1px solid;
+    width: 100%;
+    border-radius: 20px;
+    background-color:#F7F7F7 ;
+    line-height: 25px;
+}
+  
+.list-cmt .cmt {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: relative;
+}
+  
+.list-cmt .cmt .content-cmt{
+    display: flex;
+    flex-direction: row;
+}
+  
+.cmt .content-cmt .center-cmt{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+  
+.content-cmt .center-cmt .content-center{
+    padding: 8px;
+    border: #bfc1c3 1px solid;
+    border-radius: 20px;
+    background-color:#F7F7F7 ;
+}
+.content-cmt .center-cmt .feed-back{
+    padding: 8px;
+}
+.content-cmt .center-cmt .feed-back span{
+    padding-left: 8px;
+}
+  
+.cmt .content-cmt .setting-cmt button{
+    margin: auto;
+}
+  /*--------list-friend------*/
+  
+  
+.container .right-container{
+    width: 30%;
+    margin-top: 80px;
+    position: relative;
+}
+  
+.right-container .list-friend{
+    width: 60%;
+    position: absolute;
+    right: 0;
+}
+.list-friend ul{
+    max-height: 100wh;
+    overflow-y: scroll
+}
+  
+.list-friend li{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    position: relative;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.avatar > img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.name-friend{
+    margin-left: 10px;
+}
+.name-friend > p{
+    line-height: 50px;
+    font-weight: 700;
+}
+.status{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4fe63f;
+    border: 2px solid white;
+    bottom: 5px;
+    left: 40px;
+   
+}
+  
+.list-friend li:hover{
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+
+
+.img-profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #c9cfd4;
+    position: relative;
+}
+.img-profile > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.online {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #697077;
+    display: flex;
+    bottom: 2px;
+    right: 2px;
+}
+
+.ellipse{
+    height: 8px;
+    width: 8px;
+    margin: auto;
+    border-radius: 50%;
+    background: #4fe63f;
+}

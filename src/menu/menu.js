@@ -27,7 +27,7 @@ const MenuBar = ()=>{
                         <span>1</span>
                     </div>
                     <div className={styles['icon']}>
-                        <FaUserFriends size="2.3vh" style={{margin:"auto"}} />
+                        <FaUserFriends size="1.2vw" style={{margin:"auto"}} />
                     </div>
                 </div>
                 <div className={styles["contact"] + " " + styles["messages"]}>
@@ -35,7 +35,7 @@ const MenuBar = ()=>{
                         <span>1</span>
                     </div>
                     <div className={styles['icon']}>
-                        <FaFacebookMessenger size="2.3vh" style={{margin:"auto"}}/>
+                        <FaFacebookMessenger size="1.2vw" style={{margin:"auto"}}/>
                     </div>
                 </div>
                 <div className={styles["contact"] + " " + styles["notifications"]}>
@@ -43,7 +43,7 @@ const MenuBar = ()=>{
                         <span>1</span>
                     </div>
                     <div className={styles['icon']}>
-                        <FaBell size="2.3vh" style={{margin:"auto"}}/>
+                        <FaBell size="1.2vw" style={{margin:"auto"}}/>
                     </div>
                 </div>
             </div>

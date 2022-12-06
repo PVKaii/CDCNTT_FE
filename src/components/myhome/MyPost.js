@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { FaEllipsisH } from 'react-icons/fa'
+import { FaEllipsisH,FaRegThumbsUp,FaRegCommentAlt,FaShare } from 'react-icons/fa'
 
 
 import styles from '../../asset/styles/myhome.module.css'
@@ -13,7 +13,7 @@ class MyPost extends Component{
                     <h1> Giới Thiệu</h1>
                 </div>
                 <div className={styles["my-friends"]}>
-                    <p className={styles["title"] + ' '+ styles["friends"]}>My Friends</p>
+                    <p className={styles["title"] + ' ' + styles["friends"]}>My Friends</p>
                     <div className={styles["separator"]}></div>
                     <div className={styles["list-friends"]}>
                         <ul className={styles["list"]}>
@@ -141,21 +141,21 @@ class MyPost extends Component{
                                 </div>
                             </div>
                             <div className={styles["interact"]}>
-                                <div className={styles["activity like"]}>
+                                <div className={styles["activity"] + " " + styles["like"]}>
                                     <button>
-                                        <i className={styles["far fa-thumbs-up "]}></i>
+                                        <FaRegThumbsUp size={"1vw"}/>
                                         <span>Thích</span>
                                     </button>
                                 </div>
-                                <div className={styles["activity comment"]}>
+                                <div className={styles["activity"] + " " + styles["comment"]}>
                                     <button>
-                                        <i className={styles["far fa-comment-alt"]}></i>
+                                        <FaRegCommentAlt size={"1vw"}/>
                                         <span>Bình luận</span>
                                     </button>
                                 </div>
-                                <div className={styles["activity share"]}>
+                                <div className={styles["activity"] + " " + styles["share"]}>
                                     <button>
-                                        <i className={styles["fas fa-share "]}></i>
+                                        <FaShare size={"1vw"} />
                                         <span>Chia sẻ</span>
                                     </button>
                                 </div>
