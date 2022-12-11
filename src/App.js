@@ -7,6 +7,7 @@ import MenuBar from './menu/menu';
 function App() {
   return(
     <Router>
+      
         <MenuBar/>
         <Routes>
           {showMenuContents(RootRouter)}

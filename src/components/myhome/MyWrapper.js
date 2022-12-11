@@ -6,9 +6,7 @@ class MyWrapper extends Component{
         return(
             <div className={styles["sidebar-wrapper"]}>
                 <div className={styles["cover-image"]}>
-                    <div className={styles["img"]}>
-                        <img src="" alt=""/>
-                    </div>
+                    <img src="/image/coverImg.jpg" alt=""/>
                     <div className={styles["edit-imge"]}>
                         <button>
                             <FaCamera/>
@@ -17,12 +15,18 @@ class MyWrapper extends Component{
                     </div>
                 </div>
                 <div className={styles["avatar-image"]}>
-                    <div className={styles["avatar"]}>
-                        <img src="" alt=""/>
-                    </div>
-                    <div className={styles["name"]}>
-                        <h1>Long</h1>
-                    </div>
+                    <img src="/image/avatar.jpg" alt=""/>
+                    <h1>Long</h1>
+                    <ul className={styles["info"]}>
+                        <li>
+                            <span style={{fontWeight:"bold"}}>12</span>
+                            <span style={{marginLeft:"10px"}}>posts</span>
+                        </li>
+                        <li style={{marginLeft:"30px"}}>
+                            <span style={{fontWeight:"bold"}}>100</span>
+                            <span style={{marginLeft:"10px"}}>friends</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         )

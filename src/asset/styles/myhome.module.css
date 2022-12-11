@@ -10,18 +10,20 @@
 /*------------sidebar-wrapper---------------- */
 
 .sidebar-wrapper{
-    width: 100%;
-    margin-top: 50px;
+    width: 70%;
+    margin: auto;
 } 
 .sidebar-wrapper .cover-image{
-
-    height: 400px;
-    background-color: thistle;
-    margin: auto;
     position: relative;
 }
 
-.sidebar-wrapper .cover-image .edit-imge{
+.cover-image > img{
+    width: 100%;
+    height: 500px;
+    object-fit: fill;
+}
+
+.cover-image .edit-imge{
     width: 150px;
     border: #686d71 1px solid;
     position: absolute;
@@ -31,7 +33,7 @@
     
 }
 
-.sidebar-wrapper .cover-image .edit-imge > button{
+.cover-image .edit-imge > button{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -41,33 +43,45 @@
 }
 
 .sidebar-wrapper .avatar-image{
+    height: 180px;
+    width: 100%;
     display: flex;
-    flex-direction: row;
     position: relative;
     background-color: white;
-    height: 180px;
-    border-bottom: 1px solid #ced0d4;
+    border-bottom: 1px solid #c0c3ca;
 }
-
-.sidebar-wrapper .avatar-image .avatar{
+.avatar-image > img{
     width: 250px;
     height: 250px;
-    background-color: #4a4d4f;
     border-radius: 50%;
+    object-fit: cover;
     position: absolute;
-    left: 50px;
-    top: -100px;
+    bottom: 30px;
+    margin-left: 20px;
+    border: 5px solid rgb(141, 131, 131);
 }
 
-.sidebar-wrapper .avatar-image .name{
-    margin-top: 20px;
-    margin-left: 330px;
-}
-
-.sidebar-wrapper .avatar-image .name h1{
-    font-weight: bold;
+.avatar-image > h1{
+    color: #000203;
     font-size: 40px;
+    font-weight: 600;
+    position: absolute;
+    top: 30px;
+    left: 300px;
 }
+.avatar-image .info{
+    position: absolute;
+    bottom: 60px;
+    display: flex;
+    left: 300px;
+}
+.avatar-image .info >li > span{
+    font-size: 15px;
+}
+
+
+
+
 /*----------------------header---------------------------*/
 .img-profile {
     width: 50px;
@@ -99,19 +113,16 @@
 
 .container{
     width: 100%;
-    height: 2000px;
-    display: flex;
-    flex-direction: row;
+    
 }
 
-.container .container-left{
-    width: 20%;
-}
 
-.container .container-middle{  
-    width: 60%;
-}
 /*-------navigation----------*/
+
+.navigation{
+    width: 70%;
+    margin: auto;
+}
 
 .navigation .list-nav {
     height: 60px;
@@ -128,8 +139,13 @@
 }
 
 
+
 /*--------profile-main------------*/
 
+.container .container-middle{  
+    width: 70%;
+    margin: auto;
+}
 .container-middle .profile-main{
     margin-top: 15px;
     display: flex;
@@ -138,328 +154,107 @@
 /*-----main-profile--------*/
 .profile-main .my-profile{
     width: 40%;
-    margin-right: 15px;
+    margin-right: 2%;
 }
 
 .my-profile .introduction{
     background-color: white;
     border-radius: 15px;
     height: 200px;
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    margin-top: 20px;
 }
 
 .my-profile .my-friends {
     margin-top: 20px;
     padding-top: 20px;
-    padding-left: 15px;
     background-color: white;
     border: 1px #e7e8e9 solid ;
     border-radius: 15px;
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
 }
 .title {
     color: #191c1f;
     font-size: 1.125rem; 
     font-weight: bold;
-    letter-spacing: -0.01em;
-}
-.separator {
-    height: 1px;
-    margin: 21px 0 0;
-    width: 315px;
-    background: #e7e8e9;
+    margin-left: 20px;
 }
 
-.list-friends .list{
-    width: 250px;
+.cp-hr{
+    margin:10px 20px 20px 20px;
+    border: none;
+    height: 0.5px;
+    background-color: rgb(189, 173, 173);
+}
+
+.list-friends {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 20px;
 }
 
-.list-friends .list .friend{
-    position: relative;
+.list-friends .friend{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-.friend .avatar {
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-    background: #bfc1c3;
-    margin-top: 10px;
-    margin-left: 10px;
+.friend > img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.friend > span{
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.total-friends{
     margin-bottom: 10px;
+    margin-left: 20px;
 }
 
-
-.friend > .avatar > .status {
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    position: absolute;
-    background: #4fe63f;
-    left: 66px;
-    bottom: 10px;
-
-}
 
 .my-photos {
     margin-top: 20px;
     padding-top: 20px;
-    padding-left: 15px;
     background-color: white;
     border: 1px #e7e8e9 solid ;
     border-radius: 15px;
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
 }
 
-.list-photos .list{
-    width: 320px;
+.list-photos {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 20px;
 }
 
-.list-photos .list .photo{
-    width: 70px;
-    height: 70px;
-    background-color: #000203;
-    margin-top: 10px;
-    margin-left: 10px;
+.list-photos > img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
     margin-bottom: 10px;
+}
+
+.total-photos{
+    margin: 10px 0 10px 20px;
 }
 
 /*---------main-posts-------------*/
 
 
-.profile-main .posts {
+.profile-main .main {
     width: 60%;
 }
 
-.create-post {
-    min-height: 120px;
-    border: 1px solid #e7e8e9; 
-    border-radius: 15px;
-    background: #ffffff;
 
 
-}
-
-.list-post{
-    margin-top: 20px;
-}
-.post{
-    background-color: white;
-    border-radius: 15px;
-    padding-bottom: 10px;
-}
-
-.header-post {
-    display: flex;
-    flex-direction: row;
-    padding-top: 10px;
-    padding-left: 15px;
-    margin-bottom: 10px;
-}
-.header-post .avatar-post {
-    height: 60px;
-    position: relative;
-    width: 60px;
-    border-radius: 50%;
-    background: #bfc1c3;
-}
-.header-post > .avatar-post > .status {
-    position: absolute;
-    height: 9px;
-    width: 9px;
-    border-radius: 50%;
-    background: #4fe63f;
-    right: 1px;
-    bottom: 12px;
-}
-
-
-.detail-post {
-    margin: 13px 0 0 15px;
-    position: relative;
-    width: 138px;
-}
-.detail-post .name-post {
-    margin: 0 0 0 1px;
-    position: relative;
-}
-.name-post > * {
-    float: left;
-    margin: 0 4px 0 0;
-}
-
-.name-post .name {
-    color: #2186c4;
-    font-weight: bold;
-    margin-top: 1px !important;
-}
-.posted {
-    color: #686d71;
-    margin-top: 1px !important;
-}
-.time-post {
-    margin: 14px 0 0;
-    position: relative;
-    width: 98px;
-}
-
-.time-post > p {
-    color: #8e9194;
-    font-size: 0.6875rem;
-    letter-spacing: 0.025em;
-}
-
-.content-post .title-post{
-    padding-left: 10px;
-    margin-bottom: 10px ;
-}
-
-.content-post .content{
-    width: 100%;
-    height: 500px;
-    background-color: #363c42;
-}
-
-.postBottom .show-interact{
-    display: flex;
-    align-items: center;   
-    height: 40px;
-    justify-content: space-between;
-}
-
-.postBottom .show-interact .show-icon{
-    padding-left: 10px;
-    display: flex;
-    align-items: center;
-}
-.postBottom .show-interact .likeIcon{
-    max-width: 20px;
-    max-height: 20px;
-
-}
-
-.show-interact .postLikeCounter{
-    margin-left: 10px; 
-    font-size: 15px; 
-}
-
-.show-interact .show-cmt{
-    padding-right: 10px;
-}
-
-.post .postBottom .interact{
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border-bottom: #bfc1c3 1px solid;
-    border-top:  #bfc1c3 1px solid;
-}
-
-.postBottom .interact .activity {
-    margin: auto;
-}
-
-.interact .activity button {
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-}
-
-.interact .activity button span{
-    margin-left: 10px;
-}
-
-.interact .activity i{
-    width: 22px;
-    height: 22px;
-}
-
-.interact .activity span {
-    font-size: 18px;
-    margin-right: 10px;
-
-}
-
-
-.list-cmt .cmt {
-    display: flex;
-    flex-direction: row;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-
-.list-cmt .cmt .content-cmt{
-    display: flex;
-    flex-direction: row;
-}
-
-
-.cmt .content-cmt .center-cmt{
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-
-.content-cmt .center-cmt .content-center{
-    padding: 8px;
-    border: #bfc1c3 1px solid;
-    border-radius: 20px;
-    background-color:#F7F7F7 ;
-}
-.content-cmt .center-cmt .feed-back{
-    padding: 8px;
-}
-.content-cmt .center-cmt .feed-back span{
-    padding-left: 8px;
-}
-
-.cmt .content-cmt .setting-cmt{
-    height: 65%;
-    display: flex;
-    justify-content: center;
-}
-
-.cmt .content-cmt .setting-cmt button{
-    background-color: white;
-    margin: auto;
-}
-
-
-.activity-cmt{
-    display: flex;
-    flex-direction: row;
-    margin-left: 10px;
-}
-
-.activity-cmt .content-cmt{
-    width: 88%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: auto 0 10px;
-
-
-}
-.activity-cmt .content-cmt input{
-    height: 35px;
-    border: #bfc1c3 1px solid;
-    width: 100%;
-    border-radius: 18px;
-    background-color:#F7F7F7 ;
-    line-height: 15px;
-}
-
-
-
-
-
-/*------------more---------------- */
-.container .more{
-    width: 20%;
-}
 
 
 

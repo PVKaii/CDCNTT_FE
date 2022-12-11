@@ -24,7 +24,7 @@ class LoginForm extends Component{
                                 <i className={styles["fa-solid fa-lock"]}></i>
                             </div>
                             <div className={styles["btn-submit"]}>
-                                <button>Submit</button>
+                                <button onClick={this.props.handleLogin}>Submit</button>
                                 <a href="#">Forgot Password</a>
                             </div>
                         </div>

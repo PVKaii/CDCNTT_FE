@@ -12,6 +12,12 @@ a {
   color: inherit;
   text-decoration: none;
 }
+input:focus{
+  outline: none;
+}
+button{
+  cursor: pointer;
+}
 
 li{
   list-style-type: none;
