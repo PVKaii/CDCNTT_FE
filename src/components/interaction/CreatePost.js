@@ -1,7 +1,7 @@
 import { Component } from "react";
 import {MdPermMedia,MdEmojiEmotions} from "react-icons/md"
 
-import styles from '../../asset/styles/homepage.module.css'
+import styles from '../../asset/styles/createpost.module.css'
 
 
 class CreatePost extends Component{

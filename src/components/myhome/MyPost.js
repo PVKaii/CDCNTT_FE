@@ -1,8 +1,7 @@
 import { Component } from "react";
 
 
-
-import styles from '../../asset/styles/myhome.module.css'
+import styles from '../../asset/styles/mypost.module.css'
 import CreatePost from "../interaction/CreatePost";
 import Post from "../interaction/Post";
 

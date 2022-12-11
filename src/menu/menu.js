@@ -7,8 +7,6 @@ const MenuBar = ()=>{
         <header className={styles["header"]}>
             <div className={styles['left']}>
                 <Link to={"page"}>
-                    {/* <div className={styles["header-logo"]}>
-                    </div> */}
                     <span>Social Medial</span>
                 </Link>
 
@@ -18,8 +16,6 @@ const MenuBar = ()=>{
                 </div>
             </div>
             <div className={styles['right']}>
-
-
                 <div className={styles["group-notification"]}>
                     <div className={styles["contact"]}>
                         <div className={styles['count-nof']}>
@@ -51,7 +47,6 @@ const MenuBar = ()=>{
                     <span>Long</span>
                 </div>
             </div>
-
         </header>
     )
 }

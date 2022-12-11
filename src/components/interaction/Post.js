@@ -1,5 +1,5 @@
 import { Component } from "react";
-import styles from "../../asset/styles/homepage.module.css"
+import styles from "../../asset/styles/post.module.css"
 import { listPost,listInteractionOfOnePost,listCommentOfOnePost } from "../../data";
 import { Link } from "react-router-dom";
 import { FaRegThumbsUp,FaRegCommentAlt,FaShare } from 'react-icons/fa'

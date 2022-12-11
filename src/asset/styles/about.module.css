@@ -1,0 +1,51 @@
+
+
+
+.profile-main{
+    margin-top: 20px;
+    padding: 0 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+
+.about{
+    min-height: 500px;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+
+}
+  
+.about .attribute{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    line-height: 30px;
+    border-bottom: 1px solid #ced0d4;
+    
+}
+  
+.about .attribute .btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.attribute .btn > div{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 15px;
+    background-color: #ced0d4;
+    border-radius: 10px;  
+    cursor: pointer;
+}
+  
+
+
+
