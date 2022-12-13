@@ -16,7 +16,7 @@
 .my-profile .introduction{
     background-color: white;
     border-radius: 15px;
-    height: 200px;
+    height: 10.42vw;
     box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
     margin-top: 20px;
 }
@@ -58,8 +58,8 @@
 }
 
 .friend > img{
-    width: 140px;
-    height: 140px;
+    width: 7.3vw;
+    height: 7.3vw;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -91,8 +91,8 @@
 }
 
 .list-photos > img{
-    width: 150px;
-    height: 150px;
+    width: 13.8vh;
+    height: 13.8vh;
     object-fit: cover;
     border-radius: 5px;
     margin-bottom: 10px;

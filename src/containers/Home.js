@@ -1,11 +1,11 @@
-import axios from 'axios'
 import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router'
 import HomeContent from '../components/homepage/HomeContent'
-import Post from '../components/interaction/Post'
 import { ApiCaller } from '../Service/ApiCaller'
+import { logoutRequest } from '../Service/AuthService'
 
 
-const Home = ()=>{
+const Home = (props)=>{
 
     var [file,setFile]= useState({
         fileSelection:null
@@ -29,8 +29,14 @@ const Home = ()=>{
         fd.append("Content",content)
         ApiCaller("POST",fd,"user/post").then(res=>{console.log(res.data)})
     }
+    const navigate = useNavigate()
+    const onLogout =async ()=>{
+        await logoutRequest()
+        props.setUser()
+        navigate('/')
+    }
  
-    return <HomeContent fileSelected={fileSelected} handlePost={handlePost} contentChange = {contentChange}/>
+    return <HomeContent fileSelected={fileSelected} handlePost={handlePost} contentChange = {contentChange} onLogout={onLogout}/>
 }
 
 export default Home

@@ -17,6 +17,7 @@ class CreatePost extends Component{
                 <div className={styles["cp-bottom"]}>
                     <div className={styles["left"]}>
                         <div className={styles["cp-option"]}>
+
                             {/* <MdPermMedia color="tomato" className={styles["cp-icon"]}/>
                             <span className="cp-optiontext">Photo or Video</span> */}
                             <input type={"file"} onChange={(e)=>{this.props.fileSelected(e)}}/>
@@ -28,6 +29,7 @@ class CreatePost extends Component{
                     </div>
                     <div className={styles["right"]}>
                         <button className={styles["cp-btn"]} onClick={()=>this.props.handlePost()}>Post</button>
+
                     </div>
 
                 </div>

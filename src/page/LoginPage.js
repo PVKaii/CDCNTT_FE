@@ -1,7 +1,7 @@
 import Login from '../containers/Login'
 
-const LoginPage = ()=>{
-    return <Login/>
+const LoginPage = (props)=>{
+    return <Login setUser={props.setUser}/>
 }
 
 export default LoginPage;

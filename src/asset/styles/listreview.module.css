@@ -1,0 +1,86 @@
+
+.list-review{
+    width: 50%; 
+    margin: auto;
+    padding-top: 100px;
+
+}
+
+
+
+.post{
+    width: 100%;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    margin-bottom: 30px;
+
+}
+.post .post-wrapper{
+    padding: 10px;
+}
+.post-wrapper .post-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.post-top .post-topLeft{
+    display: flex;
+    align-items: center;
+}
+
+
+.post-topLeft .post-date{
+    font-size: 20px;
+}
+.post-wrapper .post-center{
+    margin: 20px 0;
+
+}
+  
+.post-center .post-centerContent{
+    width: 100%;
+    margin-top: 20px;
+}
+.post-centerContent .post-centerImage{
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+  
+   
+.post .post-bottom .interact{
+    
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: #bfc1c3 1px solid;
+    border-top:  #bfc1c3 1px solid;
+}
+  
+.post-bottom .interact .activity {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    cursor: pointer;
+    font-size: 20px;
+    
+}
+  
+.post-bottom .interact .activity:hover {
+    background-color: rgb(216, 196, 196);
+}
+.interact .activity > span{
+    line-height: 20px;
+    margin-left: 5px;
+}
+
+  
+
+  

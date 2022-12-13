@@ -12,7 +12,7 @@ class RegisterForm extends Component{
                     <input 
                         type="text" 
                         name="Email" 
-                        value={this.props.username}
+                        value={this.props.Email}
                         placeholder="Email"
                         onChange={(e)=>{ this.props.onChange(e) }}
                         onBlur={(e)=> {this.props.onBlur(e)}}
@@ -77,7 +77,8 @@ class RegisterForm extends Component{
                     <input 
                         type="password" 
                         name="Password" 
-                        value={this.props.password}
+                        value={this.props.Password}
+
                         placeholder="Password"
                         onChange={(e)=>{ this.props.onChange(e) }}
                         onBlur={(e)=> {this.props.onBlur(e)}}

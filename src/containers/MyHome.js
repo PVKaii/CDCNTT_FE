@@ -11,6 +11,8 @@ import MyFriend from "../components/myhome/MyFriend"
 import Photos from "../components/myhome/Photos"
 import Videos from "../components/myhome/Videos"
 import { getUserPostsRequest } from "../Service/PostService"
+import { ApiCaller } from "../Service/ApiCaller"
+
 
 
 const homeMenu = [
@@ -40,6 +42,21 @@ const homeMenu = [
 const MyHome = ()=>{
     const [menuHome,setMenuHome] = useState("")
     
+    const [myFriend,setMyFriend] = useState([])
+
+    const listFriend = async()=>{
+        var friends = await ApiCaller("GET",'',"user/friend")
+        .then(res=> (res.data))
+        .catch(error => {
+            console.log(error)
+        })
+        setMyFriend(friends)
+    }
+    useEffect(()=>{
+        listFriend()
+    },[])
+    console.log(myFriend)
+
     const loadMyProfile = ()=>{
         if(menuHome === ""){
             return <MyPost listPost={listPost}/>

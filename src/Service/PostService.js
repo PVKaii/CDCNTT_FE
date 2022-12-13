@@ -1,7 +1,8 @@
 import { ApiCaller } from "./ApiCaller"
 
+
 export const getUserPostsRequest=()=>{
-    return ApiCaller("GET",null,"user/post")
+    return ApiCaller("GET",null,"api/user/post")
     .then(res=>{
         return res.data
     })
@@ -9,3 +10,4 @@ export const getUserPostsRequest=()=>{
         console.log(error)
     })
 }
+

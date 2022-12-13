@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 import Authen from '../components/authen/Authen'
 import { loginRequest, registerRequest } from '../Service/AuthService'
 
@@ -7,7 +7,8 @@ const regularExpression = RegExp(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/)
 const errorTrim = "Bạn chưa nhập trường này"
 
 
-const Login = ()=>{
+
+const Login = (props)=>{
     const  [clickOption,setClickOption] = useState(true)
     const navigate = useNavigate()
     const [user,setUser] = useState({
@@ -25,6 +26,7 @@ const Login = ()=>{
     const onLogin = async ()=>{
         console.log(user)
         await loginRequest(user)
+
         if(localStorage.getItem("user")!==null) navigate("/page")
     }
     const handleSubmit = (event)=>{
@@ -76,7 +78,6 @@ const Login = ()=>{
             }
         }
     }
-
     
     return <Authen  
                 onLogin={onLogin}
@@ -88,5 +89,4 @@ const Login = ()=>{
                 error={error}
             />
 }
-
 export default Login

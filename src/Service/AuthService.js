@@ -1,7 +1,7 @@
 import { ApiCaller } from "./ApiCaller"
 
 export const loginRequest=(user)=>{
-    return ApiCaller("POST",JSON.stringify(user),"user/login")
+    return ApiCaller("POST",JSON.stringify(user),"api/user/login")
     .then(res=>{
         localStorage.setItem("user",JSON.stringify(res.data))
     })
@@ -13,7 +13,7 @@ export const loginRequest=(user)=>{
 
 
 export const registerRequest=(user)=>{
-    return ApiCaller("POST",JSON.stringify(user),"user/register")
+    return ApiCaller("POST",JSON.stringify(user),"api/user/register")
     .then(res=>{
         console.log(res.data)
         alert("ĐĂNG KÝ THÀNH CÔNG")
@@ -25,11 +25,15 @@ export const registerRequest=(user)=>{
 }
 
 
-export const logoutRequest=()=>{
-    return ApiCaller("POST",null,"user/logout")
+
+export const logoutRequest= async()=>{
+    console.log("click")
+    return ApiCaller("POST",null,"api/user/logout")
     .then(res=>{
         localStorage.removeItem("user")
     })
+    .catch(error=>{
+        console.log(error)
+    })
 
 }
-
