@@ -1,0 +1,105 @@
+.header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 3.125vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 10px 20px;
+    border-bottom: 1px solid lightgrey;
+}
+/*--------------------left---------------------*/
+.header .left{
+    display: flex;
+    align-items: center;
+}
+.left > a > span {
+    font-weight: bold;
+    font-size: 20px;
+    color: darkblue;
+}
+
+.header-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 30px;
+}
+  
+.header-search > input {
+    width: 26vw;
+    border: none;
+    background-color: transparent;
+}
+
+/*--------------------right-----------------------*/
+
+.header .right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}  
+
+.right .user{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.user > img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.group-notification{
+    display: flex;
+    gap: 20px;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.contact .count-nof{
+    display: flex;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -5px;
+    right: 0px;
+    background-color: red;
+    border-radius: 50%;
+
+}
+.contact .count-nof > span{
+    color: white;
+    line-height: 15px;
+    margin: auto;
+}
+
+.contact .icon{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #c9cfd4;
+}
+
+  
+  
+
+  
+
+
+
+ 

@@ -1,0 +1,147 @@
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+/*------------sidebar-wrapper---------------- */
+
+.sidebar-wrapper{
+    width: 70%;
+    margin: auto;
+} 
+.sidebar-wrapper .cover-image{
+    position: relative;
+}
+
+.cover-image > img{
+    width: 100%;
+    height: 25vw;
+    object-fit: fill;
+}
+
+.cover-image .edit-imge{
+    width: 150px;
+    border: #686d71 1px solid;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+    
+}
+
+.cover-image .edit-imge > button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    border-radius: 5px;
+    
+}
+
+.sidebar-wrapper .avatar-image{
+    height: 9.375vw;
+    width: 100%;
+    display: flex;
+    position: relative;
+    background-color: white;
+    border-bottom: 1px solid #c0c3ca;
+}
+.avatar-image > img{
+    width: 13vw;
+    height: 13vw;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 30px;
+    margin-left: 20px;
+    border: 5px solid rgb(141, 131, 131);
+}
+
+.avatar-image > h1{
+    color: #000203;
+    font-size: 40px;
+    font-weight: 600;
+    position: absolute;
+    top: 30px;
+    left: 15.625vw;
+}
+.avatar-image .info{
+    position: absolute;
+    bottom: 3.125vw;
+    display: flex;
+    left: 15.625vw;
+}
+.avatar-image .info >li > span{
+    font-size: 15px;
+}
+
+
+
+
+/*----------------------header---------------------------*/
+.img-profile {
+    width: 2.6vw;
+    height: 2.6vw;
+
+}
+.img-profile > img{
+    width: 100%;
+    height: 100%;
+    background-color: #000203;
+    border-radius: 50%;
+}
+
+.online {
+    left: 10%;
+    padding: 4px 0;
+    position: absolute;
+    top: 34px;
+    width: 16px;
+    border-radius: 50%;
+    background: #3f464d;
+    margin-left: 14.5px;
+}
+
+
+
+
+/*------------container---------------- */
+
+.container{
+    width: 100%;
+    
+}
+.container .container-middle{  
+    width: 70%;
+    margin: auto;
+}
+
+
+/*-------navigation----------*/
+
+.navigation{
+    width: 70%;
+    margin: auto;
+}
+
+.navigation .list-nav {
+    height: 3.125vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+}
+
+.navigation .list-nav > li{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+
