@@ -8,9 +8,17 @@ import Post from "../interaction/Post";
 class MyPost extends Component{
 
     loadListPost = ()=>{
-        console.log(this.props.listPost)
         return this.props.listPost.map((post,index)=>{
             return <Post key={index} post={post}/>
+        })
+    }
+
+    loadListFriend = ()=>{
+        return this.props.myFriend.map((friend,index)=>{
+            return  <li className={styles["friend"]} key={index}>
+            <img src="/image/avatar.jpg" />
+            <span>{friend.name}</span>
+        </li>
         })
     }
 
@@ -25,42 +33,7 @@ class MyPost extends Component{
                     <p className={styles["title"]}>My Friends</p>
                     <hr className={styles["cp-hr"]}></hr>
                     <ul className={styles["list-friends"]}>
-                        <li className={styles["friend"]}>
-                            <img src="/image/avatar.jpg" />
-                            <span>Long</span>
-                        </li>
-                        <li className={styles["friend"]}>
-                            <img src="/image/avatar.jpg" />
-                            <span>Long</span>
-                        </li>
-                        <li className={styles["friend"]}>
-                            <img src="/image/avatar.jpg" />
-                            <span>Long</span>
-                        </li>
-                        <li className={styles["friend"]}>
-                            <img src="/image/avatar.jpg" />
-                            <span>Long</span>
-                        </li>
-                        <li className={styles["friend"]}>
-                            <img src="/image/avatar.jpg" />
-                            <span>Long</span>
-                        </li>
-                        <li className={styles["friend"]}>
-                            <img src="/image/avatar.jpg" />
-                            <span>Long</span>
-                        </li>
-                        <li className={styles["friend"]}>
-                            <img src="/image/avatar.jpg" />
-                            <span>Long</span>
-                        </li>
-                        <li className={styles["friend"]}>
-                            <img src="/image/avatar.jpg" />
-                            <span>Long</span>
-                        </li>
-                        <li className={styles["friend"]}>
-                            <img src="/image/avatar.jpg" />
-                            <span>Long</span>
-                        </li>
+                        {this.loadListFriend()}
 
                     </ul>
                     <p className={styles["total-friends"]}>View All (45)</p>

@@ -45,7 +45,7 @@ const MyHome = ()=>{
     const [myFriend,setMyFriend] = useState([])
 
     const listFriend = async()=>{
-        var friends = await ApiCaller("GET",'',"user/friend")
+        var friends = await ApiCaller("GET",'',"api/user/friend")
         .then(res=> (res.data))
         .catch(error => {
             console.log(error)
@@ -59,13 +59,13 @@ const MyHome = ()=>{
 
     const loadMyProfile = ()=>{
         if(menuHome === ""){
-            return <MyPost listPost={listPost}/>
+            return <MyPost listPost={listPost} myFriend={myFriend}/>
         }
         if(menuHome === "/about/"){
             return <AboutContent/>
         }
         if(menuHome === "/friends/"){
-            return <MyFriend/>
+            return <MyFriend friends={myFriend}/>
         }
         if(menuHome === "/photos/"){
             return <Photos/>
