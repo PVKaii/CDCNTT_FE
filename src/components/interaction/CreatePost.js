@@ -18,6 +18,7 @@ class CreatePost extends Component{
                     <div className={styles["left"]}>
                         <div className={styles["cp-option"]}>
                             <MdPermMedia color="tomato" className={styles["cp-icon"]}/>
+                            {/* <input type="file"/> */}
                             <span className="cp-optiontext">Photo or Video</span>
                         </div>
                         <div className={styles["cp-option"]}>
@@ -25,8 +26,8 @@ class CreatePost extends Component{
                             <span className="cp-optiontext">Feelings</span>
                         </div>
                     </div>
-                    <div className={styles["right"]}>
-                        <button className={styles["cp-btn"]}>Post</button>
+                    <div className={styles["right"]} onClick={this.props.handleCreatePost}>
+                        <button className={styles["cp-btn"]} >Post</button>
                     </div>
 
                 </div>

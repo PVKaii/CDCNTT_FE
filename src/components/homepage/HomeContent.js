@@ -75,11 +75,10 @@ class HomeContent extends Component{
                 <li>
                   <a href="#">
                     <div className={styles["icon"]}>
-                      {/* <i className={styles["fa-solid fa-users-viewfinder fa-2xl"]}></i>  */}
                       <img src="./image/icon-group.png" alt=""/>
                     </div>
                     <div className={styles["title"]}>
-                      <p>Nhóm</p>
+                      <p>Group</p>
                     </div>
                   </a>
                 </li>
@@ -95,7 +94,7 @@ class HomeContent extends Component{
                   </a>
                 </li>
                 <li >
-                  <a href="#">
+                  <a onClick={()=> this.props.onLogout()}>
                     <div className={styles["icon"]}>
                       <i className={styles["fa-solid fa-right-from-bracket fa-2xl"]}></i>
                       <img src="./image/icons-logout.png" alt=""/>
@@ -109,7 +108,7 @@ class HomeContent extends Component{
             </div>
           </div>
           <div className={styles["main"]} >
-            <CreatePost/>
+            <CreatePost handleCreatePost={this.props.handleCreatePost}/>
             <div className={styles["list-post"]}>              
               <Post/>     
               <Post/>

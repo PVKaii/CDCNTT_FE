@@ -1,82 +1,81 @@
-    /*---create post---*/
-    .create-post {
-        margin-top: 20px;
-        min-height: 120px;
-        border-radius: 10px;
-        background: #ffffff;
-        box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
-        margin-bottom: 30px;
-    }
+
+.create-post {
+    margin-top: 20px;
+    min-height: 120px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    margin-bottom: 30px;
+}
       
-    .cp-wrapper {
-        padding: 10px;
-    }
+.cp-wrapper {
+    padding: 10px;
+}
+
+.cp-top{
+    display: flex;
+    align-items: center;
+}
+
+.cp-top .img-profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
     
-    .cp-top{
-        display: flex;
-        align-items: center;
-    }
+.cp-top .cp-input{
+    border: none;
+    width: 80%;
+    background-color: white;
+}
+
+.cp-wrapper .cp-hr{
+    margin:20px 20px 20px 0;
+    border: none;
+    height: 0.5px;
+    background-color: rgb(189, 173, 173);
+}
+
+.cp-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
     
-    .cp-top .img-profile{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-right: 10px;
-    }
+.cp-bottom .left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.cp-bottom .left .cp-option{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
     
-    .cp-top .cp-input{
-        border: none;
-        width: 80%;
-    }
+.cp-bottom .left .cp-icon{
+    font-size: 18px;
+    margin-right: 3px;
+}
+.cp-bottom .left .cp-optiontext{
+    font-size: 14px;
+    font-weight: 400;
+}
     
-    .cp-wrapper .cp-hr{
-        margin:20px 20px 20px 0;
-        border: none;
-        height: 0.5px;
-        background-color: rgb(189, 173, 173);
-    }
-    
-    .cp-bottom {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    .cp-bottom .left{
-        display: flex;
-        align-items: center;
-        gap: 20px;
-    }
-    
-    
-    .cp-bottom .left .cp-option{
-        display: flex;
-        align-items: center;
-        margin-right: 15px;
-        cursor: pointer;
-    }
-    
-    .cp-bottom .left .cp-icon{
-        font-size: 18px;
-        margin-right: 3px;
-    }
-    .cp-bottom .left .cp-optiontext{
-        font-size: 14px;
-        font-weight: 400;
-    }
-    
-    .cp-wrapper .cp-btn{
-        border: none;
-        padding: 10px;
-        border-radius: 5px;
-        background-color: rgb(18, 152, 197);
-        font-weight: 500;
-        margin-right: 20px;
-        cursor: pointer;
-    }
+.cp-wrapper .cp-btn{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(18, 152, 197);
+    font-weight: 500;
+    margin-right: 20px;
+    cursor: pointer;
+}
     
     
     
-    
-        /*-------------------------*/

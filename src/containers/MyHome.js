@@ -1,8 +1,8 @@
 
 import { Link} from "react-router-dom"
 import styles from '../asset/styles/myhome.module.css'
-import { useState } from "react"
-
+import { useState ,useEffect} from "react"
+import { ApiCaller } from "../Service/ApiCaller"
 import MyWrapper from "../components/myhome/MyWrapper"
 import MyHomeContainer from "../components/myhome/MyHomeContainer"
 import MyPost from "../components/myhome/MyPost"
@@ -10,6 +10,7 @@ import AboutContent from "../components/myhome/AboutContent"
 import MyFriend from "../components/myhome/MyFriend"
 import Photos from "../components/myhome/Photos"
 import Videos from "../components/myhome/Videos"
+
 
 
 const homeMenu = [
@@ -39,6 +40,21 @@ const homeMenu = [
 const MyHome = ()=>{
     const [menuHome,setMenuHome] = useState("")
     
+    const [myFriend,setMyFriend] = useState([])
+
+    const listFriend = async()=>{
+        var friends = await ApiCaller("GET",'',"api/user/friend")
+        .then(res=> (res.data))
+        .catch(error => {
+            console.log(error)
+        })
+        setMyFriend(friends)
+    }
+    useEffect(()=>{
+        listFriend()
+    },[])
+    console.log(myFriend)
+
     const loadMyProfile = ()=>{
         if(menuHome === ""){
             return <MyPost/>

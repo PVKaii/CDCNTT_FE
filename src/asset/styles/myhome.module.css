@@ -19,7 +19,7 @@
 
 .cover-image > img{
     width: 100%;
-    height: 500px;
+    height: 25vw;
     object-fit: fill;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .sidebar-wrapper .avatar-image{
-    height: 180px;
+    height: 9.375vw;
     width: 100%;
     display: flex;
     position: relative;
@@ -51,8 +51,8 @@
     border-bottom: 1px solid #c0c3ca;
 }
 .avatar-image > img{
-    width: 250px;
-    height: 250px;
+    width: 13vw;
+    height: 13vw;
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
@@ -67,13 +67,13 @@
     font-weight: 600;
     position: absolute;
     top: 30px;
-    left: 300px;
+    left: 15.625vw;
 }
 .avatar-image .info{
     position: absolute;
-    bottom: 60px;
+    bottom: 3.125vw;
     display: flex;
-    left: 300px;
+    left: 15.625vw;
 }
 .avatar-image .info >li > span{
     font-size: 15px;
@@ -84,8 +84,8 @@
 
 /*----------------------header---------------------------*/
 .img-profile {
-    width: 50px;
-    height: 50px;
+    width: 2.6vw;
+    height: 2.6vw;
 
 }
 .img-profile > img{
@@ -129,7 +129,7 @@
 }
 
 .navigation .list-nav {
-    height: 60px;
+    height: 3.125vw;
     display: flex;
     flex-direction: row;
     align-items: center;

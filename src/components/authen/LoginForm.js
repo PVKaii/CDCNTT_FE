@@ -9,7 +9,7 @@ class LoginForm extends Component{
             <div className={styles["input"]}>
                 <input 
                     type="text" 
-                    name="username" 
+                    name="Email" 
                     value={this.props.username} 
                     placeholder="Login"
                     onChange={(e)=>{ this.props.onChange(e) }}
@@ -19,7 +19,7 @@ class LoginForm extends Component{
             <div className={styles["input"]}>
                 <input 
                     type="password"
-                    name="password"
+                    name="Password"
                     value={this.props.password} 
                     placeholder="Password"
                     onChange={(e)=>{ this.props.onChange(e) }}

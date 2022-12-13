@@ -7,12 +7,12 @@ class RegisterForm extends Component{
     render(){
         return(
             <div className={styles["form"]}>
-                <p>{this.props.error.username}</p>
-                <div className={ this.props.error.username.length > 0 ? styles["is-invaid"] :  styles["input"]}>
+                <p>{this.props.error.Email}</p>
+                <div className={ this.props.error.Email.length > 0 ? styles["is-invaid"] :  styles["input"]}>
                     <input 
                         type="text" 
-                        name="username" 
-                        value={this.props.username}
+                        name="Email" 
+                        value={this.props.Email}
                         placeholder="Email"
                         onChange={(e)=>{ this.props.onChange(e) }}
                         onBlur={(e)=> {this.props.onBlur(e)}}
@@ -76,8 +76,8 @@ class RegisterForm extends Component{
                 <div className={styles["input"]}>
                     <input 
                         type="password" 
-                        name="password" 
-                        value={this.props.password}
+                        name="Password" 
+                        value={this.props.Password}
                         placeholder="Password"
                         onChange={(e)=>{ this.props.onChange(e) }}
                         onBlur={(e)=> {this.props.onBlur(e)}}

@@ -1,33 +1,38 @@
-import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 import Authen from '../components/authen/Authen'
-
+import { loginRequest, registerRequest } from '../Service/AuthService'
 const regularExpression = RegExp(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/)
 const errorTrim = "Bạn chưa nhập trường này"
 
 
-const Login = ()=>{
+
+const Login = (props)=>{
     const  [clickOption,setClickOption] = useState(true)
     const navigate = useNavigate()
     const [user,setUser] = useState({
-        username:"",
-        password:""
+        Email:"",
+        Password:""
     })
     const [error,setError] = useState(
         {
-            "username":'',
+            "Email":'',
             "name":'',
-            "password":'',
+            "Password":'',
             "confirmpassword":''
         })
- 
-    const onLogin = ()=>{
-        navigate("/page")
+
+    const onLogin = async ()=>{
+        console.log(user)
+        await loginRequest(user)
+        props.setUser()
+        if(localStorage.getItem("user")!==null) navigate("/page")
     }
     const handleSubmit = (event)=>{
         event.preventDefault()
-        if(error.username.length + error.name.length + error.password.length + error.confirmpassword.length === 0){
-            console.log("OK")
+        console.log(error)
+        if(error.Email.length + error.name.length + error.Password.length + error.confirmpassword.length === 0){
+            registerRequest(user)
         }
     }
     const handleClickOption =(check)=>{
@@ -47,6 +52,7 @@ const Login = ()=>{
         }
         setUser({...user,[name]:value});
         console.log(user)
+        console.log(error)
     }
     const onBlur = (e)=>{
         const atribute = e.target.name;
@@ -65,13 +71,12 @@ const Login = ()=>{
                 }
             }
             if(atribute === 'confirmpassword'){
-                if(e.target.value !== user['password']){
+                if(e.target.value !== user['Password']){
                     setError({...error,[atribute]:"Mật khẩu không khớp"})
                 }
             }
         }
     }
-
     
     return <Authen  
                 onLogin={onLogin}
@@ -83,5 +88,4 @@ const Login = ()=>{
                 error={error}
             />
 }
-
 export default Login
