@@ -1,7 +1,7 @@
 
 import { Link} from "react-router-dom"
 import styles from '../asset/styles/myhome.module.css'
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 import MyWrapper from "../components/myhome/MyWrapper"
 import MyHomeContainer from "../components/myhome/MyHomeContainer"
@@ -10,6 +10,7 @@ import AboutContent from "../components/myhome/AboutContent"
 import MyFriend from "../components/myhome/MyFriend"
 import Photos from "../components/myhome/Photos"
 import Videos from "../components/myhome/Videos"
+import { getUserPostsRequest } from "../Service/PostService"
 
 
 const homeMenu = [
@@ -41,7 +42,7 @@ const MyHome = ()=>{
     
     const loadMyProfile = ()=>{
         if(menuHome === ""){
-            return <MyPost/>
+            return <MyPost listPost={listPost}/>
         }
         if(menuHome === "/about/"){
             return <AboutContent/>
@@ -57,6 +58,17 @@ const MyHome = ()=>{
             return <Videos/>
         }
     }   
+
+    var [listPost , setListPost] = useState([])
+    const  loadListPost= async ()=>{
+        var posts= await getUserPostsRequest();
+        setListPost(posts)
+    }
+
+    useEffect(()=>{
+        loadListPost();
+    },[])
+
 
     const loadHomeMenu = ()=>{
         const handleClickMenu = (value) =>{

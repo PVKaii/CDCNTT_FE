@@ -21,7 +21,7 @@ const authRoutes=[
         exact: true,
         page: MyHomePage,
         role:[],
-    },
+    }
 ]
 
 export default authRoutes;

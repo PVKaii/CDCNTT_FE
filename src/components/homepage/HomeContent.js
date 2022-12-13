@@ -109,7 +109,7 @@ class HomeContent extends Component{
             </div>
           </div>
           <div className={styles["main"]} >
-            <CreatePost/>
+            <CreatePost fileSelected={this.props.fileSelected} handlePost={this.props.handlePost} contentChange={this.props.contentChange}/>
             <div className={styles["list-post"]}>              
               <Post/>     
               <Post/>
