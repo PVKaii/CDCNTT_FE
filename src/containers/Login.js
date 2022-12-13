@@ -22,9 +22,9 @@ const Login = ()=>{
             "confirmpassword":''
         })
  
-    const onLogin = ()=>{
+    const onLogin = async ()=>{
         console.log(user)
-        loginRequest(user)
+        await loginRequest(user)
         if(localStorage.getItem("user")!==null) navigate("/page")
     }
     const handleSubmit = (event)=>{

@@ -8,9 +8,6 @@ export const loginRequest=(user)=>{
     .catch(error=>{
         alert("ĐĂNG NHẬP THẤT BẠI")
         console.log(error)
-        localStorage.setItem("user",JSON.stringify(
-            {"Token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYmYiOjE2NjU4NTU5MjAsImV4cCI6MTY3NjQ4MzEyMCwiaXNzIjoiaHR0cHM6Ly9lbmxhYnNvZnR3YXJlLmNvbS8iLCJhdWQiOiJodHRwczovL2VubGFic29mdHdhcmUuY29tLyJ9.HsvAImj6IGTHnik3F_t46xXzXvEwGSZ9Ivq6Q4vQeQ8"}
-        ))
     })
 }
 

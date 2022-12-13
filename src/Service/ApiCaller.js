@@ -6,7 +6,7 @@ export const ApiCaller = (method,body,endpoint)=>{
    //  console.log(getHeader())
     return axios({
         method: method,
-        url: `http://localhost:5000/${endpoint}`,
+        url: `https://social-network-api.azurewebsites.net/api/${endpoint}`,
         headers: getHeader(), 
         data: body
       })
