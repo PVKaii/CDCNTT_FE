@@ -7,11 +7,11 @@ class RegisterForm extends Component{
     render(){
         return(
             <div className={styles["form"]}>
-                <p>{this.props.error.username}</p>
-                <div className={ this.props.error.username.length > 0 ? styles["is-invaid"] :  styles["input"]}>
+                <p>{this.props.error.Email}</p>
+                <div className={ this.props.error.Email.length > 0 ? styles["is-invaid"] :  styles["input"]}>
                     <input 
                         type="text" 
-                        name="username" 
+                        name="Email" 
                         value={this.props.username}
                         placeholder="Email"
                         onChange={(e)=>{ this.props.onChange(e) }}
@@ -76,7 +76,7 @@ class RegisterForm extends Component{
                 <div className={styles["input"]}>
                     <input 
                         type="password" 
-                        name="password" 
+                        name="Password" 
                         value={this.props.password}
                         placeholder="Password"
                         onChange={(e)=>{ this.props.onChange(e) }}
