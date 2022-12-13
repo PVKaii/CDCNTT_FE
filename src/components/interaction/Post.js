@@ -7,6 +7,7 @@ import { MdMoreVert } from "react-icons/md"
 
 class Post extends Component{
     render(){
+        var post = this.props.post;
         return(
             <div className={styles["post"]}>
                 <div className={styles["post-wrapper"]}>
@@ -14,18 +15,18 @@ class Post extends Component{
                         <div className={styles["post-topLeft"]}>
                             <img className={styles["post-profileImgae"]} src="/image/avatar.jpg" />
                             <Link className={styles["post-name"]} to={listPost[0].User[0].srcLink}>
-                                <span >{listPost[0].User[1].name}</span>
+                                <span >Long</span>
                             </Link>
-                            <span className={styles["post-date"]}>{listPost[0].timePost}</span>
+                            <span className={styles["post-date"]}>{post.createdDate}</span>
                         </div>
                         <div className={styles["post-topRight"]}>
                             <MdMoreVert/>
                         </div>
                     </div>
                     <div className={styles["post-center"]}>
-                        <span className={styles["post-centerTitle"]}>{listPost[0].titlePost}</span>    
+                        <span className={styles["post-centerTitle"]}>{post.content}</span>    
                         <div className={styles["post-centerContent"]}>
-                            <img className={styles["post-centerImage"]} src="/image/avatar.jpg" alt=""/>
+                            <img className={styles["post-centerImage"]} src={post.fileUrl} alt=""/>
                         </div>
                     </div>
                     <div className={styles["post-bottom"]}>

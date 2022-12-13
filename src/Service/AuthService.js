@@ -1,4 +1,5 @@
 import { ApiCaller } from "./ApiCaller"
+
 export const loginRequest=(user)=>{
     return ApiCaller("POST",JSON.stringify(user),"api/user/login")
     .then(res=>{
@@ -12,7 +13,7 @@ export const loginRequest=(user)=>{
 
 
 export const registerRequest=(user)=>{
-    return ApiCaller("POST",JSON.stringify(user),"user/register")
+    return ApiCaller("POST",JSON.stringify(user),"api/user/register")
     .then(res=>{
         console.log(res.data)
         alert("ĐĂNG KÝ THÀNH CÔNG")
@@ -22,6 +23,7 @@ export const registerRequest=(user)=>{
         console.log(error)
     })
 }
+
 
 
 export const logoutRequest= async()=>{

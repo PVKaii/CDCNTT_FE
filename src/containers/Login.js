@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import Authen from '../components/authen/Authen'
 import { loginRequest, registerRequest } from '../Service/AuthService'
+
 const regularExpression = RegExp(/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/)
 const errorTrim = "Bạn chưa nhập trường này"
 
@@ -21,11 +22,11 @@ const Login = (props)=>{
             "Password":'',
             "confirmpassword":''
         })
-
+ 
     const onLogin = async ()=>{
         console.log(user)
         await loginRequest(user)
-        props.setUser()
+
         if(localStorage.getItem("user")!==null) navigate("/page")
     }
     const handleSubmit = (event)=>{

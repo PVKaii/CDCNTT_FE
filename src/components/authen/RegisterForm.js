@@ -78,6 +78,7 @@ class RegisterForm extends Component{
                         type="password" 
                         name="Password" 
                         value={this.props.Password}
+
                         placeholder="Password"
                         onChange={(e)=>{ this.props.onChange(e) }}
                         onBlur={(e)=> {this.props.onBlur(e)}}

@@ -11,23 +11,25 @@ class CreatePost extends Component{
               <div className={styles["cp-wrapper"]}>
                 <div className={styles["cp-top"]}>
                     <img className={styles["img-profile"]} src="/image/avatar.jpg" alt=""/>
-                    <input className={styles["cp-input"]} placeholder="what's in your mind Long ?"/>
+                    <input className={styles["cp-input"]} placeholder="what's in your mind Long ?" onChange={(e)=>this.props.contentChange(e)}/>
                 </div>
                 <hr className={styles["cp-hr"]} />
                 <div className={styles["cp-bottom"]}>
                     <div className={styles["left"]}>
                         <div className={styles["cp-option"]}>
-                            <MdPermMedia color="tomato" className={styles["cp-icon"]}/>
-                            {/* <input type="file"/> */}
-                            <span className="cp-optiontext">Photo or Video</span>
+
+                            {/* <MdPermMedia color="tomato" className={styles["cp-icon"]}/>
+                            <span className="cp-optiontext">Photo or Video</span> */}
+                            <input type={"file"} onChange={(e)=>{this.props.fileSelected(e)}}/>
                         </div>
                         <div className={styles["cp-option"]}>
                             <MdEmojiEmotions color="goldenrod" className={styles["cp-icon"]}/>
                             <span className="cp-optiontext">Feelings</span>
                         </div>
                     </div>
-                    <div className={styles["right"]} onClick={this.props.handleCreatePost}>
-                        <button className={styles["cp-btn"]} >Post</button>
+                    <div className={styles["right"]}>
+                        <button className={styles["cp-btn"]} onClick={()=>this.props.handlePost()}>Post</button>
+
                     </div>
 
                 </div>

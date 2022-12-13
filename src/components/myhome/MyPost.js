@@ -6,6 +6,14 @@ import CreatePost from "../interaction/CreatePost";
 import Post from "../interaction/Post";
 
 class MyPost extends Component{
+
+    loadListPost = ()=>{
+        console.log(this.props.listPost)
+        return this.props.listPost.map((post,index)=>{
+            return <Post key={index} post={post}/>
+        })
+    }
+
     render(){
         return(
         <div className={styles["profile-main"]}>
@@ -77,17 +85,14 @@ class MyPost extends Component{
             <div className={styles["main"]}>
                 <CreatePost/>
                 <div className={styles["list-post"]}>
-                    <Post/>
-                    <Post/>
-                    <Post/>
-                    <Post/>
-                    <Post/>
+                    {this.loadListPost()}
                 </div>
             </div>
         </div>
         )
     }
 }
+
 
 
 
