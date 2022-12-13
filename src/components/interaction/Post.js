@@ -15,7 +15,7 @@ class Post extends Component{
                         <div className={styles["post-topLeft"]}>
                             <img className={styles["post-profileImgae"]} src="/image/avatar.jpg" />
                             <Link className={styles["post-name"]} to={listPost[0].User[0].srcLink}>
-                                <span >{listPost[0].User[1].name}</span>
+                                <span >Long</span>
                             </Link>
                             <span className={styles["post-date"]}>{post.createdDate}</span>
                         </div>

@@ -111,12 +111,6 @@ class HomeContent extends Component{
           <div className={styles["main"]} >
             <CreatePost fileSelected={this.props.fileSelected} handlePost={this.props.handlePost} contentChange={this.props.contentChange}/>
             <div className={styles["list-post"]}>              
-              <Post/>     
-              <Post/>
-              <Post/>
-              <Post/>
-              <Post/>   
-              <Post/>
             </div>
 
           </div>
